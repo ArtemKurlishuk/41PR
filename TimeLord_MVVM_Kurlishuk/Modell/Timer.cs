@@ -58,7 +58,7 @@ namespace TimeLord_MVVM_Kurlishuk.Modell
                     int Second = int.Parse(time[2]);
                     Time = Hour * 60 * 60 + Minute * 60 + Second;
                 }
-                catch 
+                catch
                 {
                     Time = 0;
                 }
