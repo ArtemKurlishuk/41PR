@@ -22,11 +22,11 @@ namespace TimeLord_MVVM_Kurlishuk.Modell
                 // Сообщаем о том, что произошло изменение свойства
                 PropertyChanged(this, new PropertyChangedEventArgs(prop));
         }
-         
+
         /// <summary>
         /// Таймер [Свойство]
         /// </summary>
-        public string Timer 
+        public string Timer
         {
             // Аксессор чтения
             get
@@ -60,7 +60,8 @@ namespace TimeLord_MVVM_Kurlishuk.Modell
         public int Time
         {
             get { return time; }
-            set { 
+            set
+            {
                 time = value;
                 // Сообщаем об изменении
                 OnPropertyChanged("Timer");
@@ -112,7 +113,7 @@ namespace TimeLord_MVVM_Kurlishuk.Modell
         public RelayCommand StartTimer
         {
             // Аксессор чтения
-            get 
+            get
             {
                 // Если у нас существует выполнение страта, то выполняем его
                 // если не существует
@@ -153,7 +154,7 @@ namespace TimeLord_MVVM_Kurlishuk.Modell
         /// </summary>
         public RelayCommand IntervalTimer
         {
-            get 
+            get
             {
                 // Если у нас существует действие интервала, то выполняем его,
                 // если не существует
