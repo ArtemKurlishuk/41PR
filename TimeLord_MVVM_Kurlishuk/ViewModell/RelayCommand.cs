@@ -17,7 +17,7 @@ namespace TimeLord_MVVM_Kurlishuk.ViewModell
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
-        // Конструктор для регистрации выполняемого метода
+        // Конструктор для регистрации выполняемого метода 
         public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
         {
             this.execute = execute;
